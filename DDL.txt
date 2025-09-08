@@ -1,0 +1,43 @@
+===========================================
+PREFACE
+===========================================
+This program is aims to create tables and insert the dataset into a PostgreSQL database.
+
+
+===========================================
+URL DATASET
+===========================================
+Dataset URL: https://www.kaggle.com/datasets/navjotkaushal/coffee-sales-dataset
+
+===========================================
+Data Definition Language Syntax
+===========================================
+Defines the structure of the `table_m3`, specifying columns, data types, and constraints using `CREATE TABLE`.
+
+CREATE TABLE table_m3 (
+    hour_of_day INT,
+    cash_type VARCHAR(50), 
+    money NUMERIC(10, 2),
+    coffee_name VARCHAR(100),
+    Time_of_Day VARCHAR(100),
+    Weekday VARCHAR(100), 
+    Month_name VARCHAR(100), 
+    Weekdaysort INT,
+    Monthsort INT,
+    Date DATE,
+    Time TIME
+);
+
+===========================================
+Data Manipulation Language Syntax
+===========================================
+Inserts data from a CSV file into the `table_m3` using `COPY`.
+
+COPY table_m3(hour_of_day, cash_type, money, coffee_name, Time_of_Day,
+                Weekday, Month_name, Weekdaysort, Monthsort, Date, Time)
+FROM '/tmp/P2M3_Muhammad_Luthfi_Alfatih_data_raw.csv'
+WITH (
+    FORMAT csv,
+    HEADER true,
+    DELIMITER ','
+);

@@ -1,0 +1,31 @@
+# Conceptual Problems
+
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui!  
+Jawaban:  
+NoSQL adalah jenis database non-relasional yang dirancang untuk menyimpan dan mengelola data dalam skala besar dengan struktur yang fleksibel. 
+Tidak seperti SQL yang berbasis tabel, NoSQL mendukung berbagai model seperti dokumen, key-value, kolom, dan graph, sehingga cocok untuk data tidak terstruktur maupun semi-terstruktur.
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System!  
+Jawaban:  
+- NoSQL digunakan ketika data bersifat besar, tidak terstruktur, sering berubah, atau membutuhkan skalabilitas horizontal dan kecepatan tinggi. Contoh: aplikasi media sosial, real-time analytics.  
+- RDBMS (SQL) digunakan ketika data terstruktur dengan skema yang stabil, membutuhkan transaksi kompleks, dan konsistensi data yang kuat. Contoh: sistem perbankan, keuangan, dan inventory.
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut!  
+Jawaban:  
+- MongoDB -> berbasis dokumen JSON, skema fleksibel, mudah digunakan, cocok untuk aplikasi modern berbasis web/mobile.  
+- Cassandra -> berbasis kolom, mampu menangani data dengan skala sangat besar secara terdistribusi, mendukung high availability tanpa single point of failure.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri!  
+Jawaban:  
+Apache Airflow adalah platform orkestrasi workflow yang digunakan untuk menjadwalkan, mengelola, dan memantau proses ETL atau pipeline data. Airflow memungkinkan kita mendefinisikan alur kerja sebagai kode (DAG - Directed Acyclic Graph), sehingga pipeline lebih terstruktur, mudah dikelola, dan otomatis dijalankan sesuai jadwal.
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri!  
+Jawaban:  
+Great Expectations adalah framework open-source untuk validasi kualitas data. Dengan tool ini, kita bisa mendefinisikan aturan (*Expectation*) yang memastikan data sesuai kriteria tertentu (misalnya tidak ada nilai kosong, nilai dalam rentang tertentu, atau kolom harus unik). Hasil validasi ini membantu mendeteksi masalah data lebih awal sebelum dipakai dalam pipeline atau analisis.
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll)!  
+Jawaban:  
+Batch Processing adalah metode pemrosesan data dalam jumlah besar yang dikumpulkan terlebih dahulu, lalu dijalankan sekaligus dalam satu waktu. Biasanya digunakan untuk pekerjaan yang tidak memerlukan hasil instan, tetapi butuh efisiensi dalam skala besar.  
+- Contoh kasus: pemrosesan transaksi harian bank, laporan bulanan penjualan, analisis data log.  
+- Tools: Apache Hadoop, Apache Spark, Airflow, AWS Batch.  
+Kelebihannya adalah mampu menangani data besar dengan efisiensi tinggi, meskipun latensi lebih lama dibanding real-time processing.
