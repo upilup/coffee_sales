@@ -98,7 +98,7 @@ However, transactional data is often not directly ready for analysis. An **ETL (
 - Additional references:  
   - Markdown Guide: [Basic Syntax](https://www.markdownguide.org/basic-syntax/)  
   - Example README templates  
-
-├── P2M3_Muhammad_Luthfi_Alfatih_data_clean.csv # Cleaned dataset (after preprocessing)
-├── P2M3_Muhammad_Luthfi_Alfatih_GX.ipynb # Data exploration & preprocessing notebook
+<br>
+├── P2M3_Muhammad_Luthfi_Alfatih_data_clean.csv # Cleaned dataset (after preprocessing)<br>
+├── P2M3_Muhammad_Luthfi_Alfatih_GX.ipynb # Data exploration & preprocessing notebook<br>
 └── conceptual.txt # Conceptual Q&A (NoSQL, Airflow, Great Expectations, etc.)
