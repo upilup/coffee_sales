@@ -3,7 +3,6 @@ PREFACE
 ===========================================
 This program is aims to create tables and insert the dataset into a PostgreSQL database.
 
-
 ===========================================
 URL DATASET
 ===========================================
