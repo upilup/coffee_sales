@@ -3,7 +3,6 @@
 Milestone 3
 
 Nama  : Muhammad Luthfi Alfatih
-Batch : FTDS-030-HCK
 
 Program ini dibuat untuk melakukan automatisasi Extract, Transform, dan Load (ETL) data dari PostgreSQL ke ElasticSearch. Adapun dataset yang dipakai adalah dataset mengenai 
 penjualan kopi (Coffee Sales) dari Kaggle (Maret 2024 sampai dengan Maret 2025). Tujuan utam program ini adalah membangun pipeline data yang dapat membersihkan, mentransformasi,
